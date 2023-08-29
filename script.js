@@ -31,15 +31,6 @@ const generateRandomDogPic = async (url) => {
     }
 }
 
-//FETCHING RANDOM DOG PICS BY BREED FROM API
-// const displayBreedPic = async (url) => {
-//   const response = await fetch(url);
-//   const picByBreed = await response.json();
-// }
-
-//DECLARING THIS VARIABLE IN THE GLOBAL SCOPE IN ORDER TO USE IT IN ANOTHER FUNCTION
-// let selectedBreed;
-
 //FETCHING THE LIST OF DOG BREEDS FROM API
 const listBreeds = async (url) => {
   try {
