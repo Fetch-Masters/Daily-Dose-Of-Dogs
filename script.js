@@ -1,9 +1,10 @@
-const url1 = 'https://dog.ceo/api/breeds/list/all';
-
+const breedList = 'https://dog.ceo/api/breeds/list/all';
+const randomDogPic = 'https://dog.ceo/api/breeds/image/random';
 
 //DOM MANIPULATION FOR DISPLAYING RANDOM DOG PIC
+let figure;
 const createDogPics = (imgURL) => {
-    const figure = document.querySelector('figure');
+    figure = document.querySelector('figure');
     const img = document.createElement('img');
     img.src = imgURL;
     figure.append(img)
@@ -20,6 +21,19 @@ const generateRandomDogPic = async (url) => {
         console.error(err)
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('#btn').addEventListener('click', (e) => {
+      generateRandomDogPic(randomDogPic);
+    figure.innerHTML = ''
+    })
+});
+/*
+const btn = document.querySelector('#btn')
+if (btn) {
+  btn.onclick = generateRandomDogPic(randomDogPic);
+}
+*/
 
 //DROP DOWN MENU FUNCTIONALITY
 function myFunction() {
@@ -55,11 +69,11 @@ const createDogBreedOptions = (breed, breedURL) => {
   const a = document.createElement('a');
   a.className = 'breed'
   a.textContent = breed;
-  a.href = breedURL;
+  // a.onclick = breedURL;
   myDropdown.append(a);
 }
 
-let selectedBreed;
+// let selectedBreed;
 
 // document.querySelectorAll('.breed').addEventListener('click', async (e) => {
 //   e.preventDefault();
@@ -84,9 +98,8 @@ const listBreeds = async (url) => {
   }
 }
 
-const url2 = 'https://dog.ceo/api/breeds/image/random';
 
-listBreeds(url1)
+listBreeds(breedList)
 // // testRoute(url2)
 
-// generateRandomDogPic(url2);
+generateRandomDogPic(randomDogPic);
