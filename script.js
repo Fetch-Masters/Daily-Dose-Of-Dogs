@@ -12,11 +12,11 @@ const createDogPics = (imgURL) => {
 //DOM MANIPULATION FOR DROP DOWN ADDING EACH BREED
 const createDogBreedOptions = (breed) => {
   const myDropdown = document.querySelector('#myDropdown');
-  const a = document.createElement('a');
-  a.className = 'breed'
-  a.textContent = breed;
-  // a.href = breedURL;
-  myDropdown.append(a);
+  const button = document.createElement('button');
+  button.className = 'breed'
+  button.textContent = breed;
+  button.dataset.breed = breed;
+  myDropdown.append(button);
 }
 
 //FETCHING THE RANDOM DOG PICS FROM API
@@ -24,7 +24,7 @@ const generateRandomDogPic = async (url) => {
     try {
         const response = await fetch(url);
         const dogs = await response.json();
-        createDogPics((dogs.message));
+        createDogPics(dogs.message);
     }
     catch (err) {
         console.error(err)
@@ -68,12 +68,21 @@ listBreeds(breedList)
 generateRandomDogPic(randomDogPic);
 
 //EVENT LISTENERS
+
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#btn').addEventListener('click', (e) => {
-      generateRandomDogPic(randomDogPic);
+  document.querySelector('#btn').addEventListener('click', (e) => {
+    generateRandomDogPic(randomDogPic);
     figure.innerHTML = ''
-    });
-    // document.querySelector('.breed').addEventListener("click", (e) => {
-    //   // generateRandomDogPic()
-    // })
+  });
+  document.querySelector("#myDropdown").addEventListener('click', async (e) => {
+    try {
+      const response = await fetch(`https://dog.ceo/api/breed/${e.target.dataset.breed}/images/random`);
+      const selectedBreed = await response.json();
+      figure.innerHTML = ''
+      createDogPics(selectedBreed.message)
+    } catch (err) {
+      console.error(err);
+    }
+    // console.log(e.target.data-breed)
+  })
 });
