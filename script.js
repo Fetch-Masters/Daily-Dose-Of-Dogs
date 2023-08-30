@@ -1,5 +1,6 @@
 const breedList = 'https://dog.ceo/api/breeds/list/all';
 const randomDogPic = 'https://dog.ceo/api/breeds/image/random';
+const randomFacts = 'https://dog-api.kinduff.com/api/facts';
 
 //DOM MANIPULATION FOR DISPLAYING DOG PIC
 let figure;
@@ -19,6 +20,16 @@ const createDogBreedOptions = (breed) => {
   myDropdown.append(button);
 }
 
+// DOM MANIPULATION FOR DISPLAYING DOG FACTS
+ let figCap;
+ const createDogFacts = (facts) => {
+  figCap = document.querySelector('figcaption');
+  const p = document.createElement('p');
+  p.textContent = facts
+  figCap.append(p)
+   
+ }
+
 //FETCHING THE RANDOM DOG PICS FROM API
 const generateRandomDogPic = async (url) => {
     try {
@@ -29,6 +40,18 @@ const generateRandomDogPic = async (url) => {
     catch (err) {
         console.error(err)
     }
+}
+
+///FETCHING RANDOM DOG FACTS FROM API
+const generateRandomDogFacts = async (url) => {
+  try {
+    const response = await fetch(url);
+    const factsObj = await response.json();
+    createDogFacts(factsObj.facts)
+  }
+  catch (err) {
+    console.log(err)
+  }
 }
 
 //FETCHING THE LIST OF DOG BREEDS FROM API
@@ -66,6 +89,7 @@ function filterFunction() {
 
 listBreeds(breedList)
 generateRandomDogPic(randomDogPic);
+generateRandomDogFacts(randomFacts);
 
 //EVENT LISTENERS
 
