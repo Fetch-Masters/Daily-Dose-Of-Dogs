@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
       const response = await fetch(`https://dog.ceo/api/breed/${e.target.dataset.breed}/images/random`);
       const selectedBreed = await response.json();
-      figure.innerHTML = ''
       createDogPics(selectedBreed.message)
     } catch (err) {
       console.error(err);
