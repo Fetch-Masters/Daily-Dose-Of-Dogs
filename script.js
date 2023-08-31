@@ -142,7 +142,7 @@ document.querySelector('#viewFaves').addEventListener('click', (e) => {
 // localStorage.clear()
 document.querySelector('#favBtn').addEventListener('click', (e) => {
 //   console.log(e.target)
-  const imgURL = document.querySelector('img').src;
+  const imgURL = document.querySelector('#dummy-image').src;
   // if (!faveImgs.includes(imgURL)) faveImgs.push(imgURL)
   // saveImg(faveImgs.indexOf(imgURL).toString(), imgURL)
   // console.log(localStorage)
@@ -151,7 +151,7 @@ document.querySelector('#favBtn').addEventListener('click', (e) => {
 });
 
 document.querySelector('#btn').addEventListener('click', (e) => {
-  figure.innerHTML = ''
+  // figure.innerHTML = ''
   generateRandomDogPic(randomDogPic);
   // generateRandomDogFacts(randomFacts)
 });
