@@ -5,11 +5,11 @@ const randomFacts = 'https://dog-api.kinduff.com/api/facts';
 //DOM MANIPULATION FOR DISPLAYING DOG PIC
 let figure;
 const createDogPics = (imgURL) => {
-  figure = document.querySelector('figure');
-  const img = document.createElement('img');
-  img.src = imgURL;
-  figure.append(img)
+    figure = document.querySelector('figure');
+    const img = document.querySelector('#dummy-image');
+    img.src = imgURL;
 }
+
 //DOM MANIPULATION FOR DROP DOWN ADDING EACH BREED
 const createDogBreedOptions = (breed) => {
   const myDropdown = document.querySelector('#myDropdown');
@@ -24,11 +24,8 @@ const createDogBreedOptions = (breed) => {
 let figCap;
 const createDogFacts = (facts) => {
   figCap = document.querySelector('figcaption');
-  const p = document.createElement('p');
-  p.textContent = facts
-  figCap.append(p)
-
-}
+  figCap.textContent = facts
+ }
 
 //FETCHING THE RANDOM DOG PICS FROM API
 const generateRandomDogPic = async (url) => {
@@ -163,7 +160,6 @@ document.querySelector("#myDropdown").addEventListener('click', async (e) => {
   try {
     const response = await fetch(`https://dog.ceo/api/breed/${e.target.dataset.breed}/images/random`);
     const selectedBreed = await response.json();
-    figure.innerHTML = ''
     createDogPics(selectedBreed.message)
   }
   catch (err) {
