@@ -12,8 +12,19 @@
 <body>
     <header>
         <h1>Daily Dose of Dogs!</h1>
+        <button id='viewFaves' type="submit">View Favorites</button>
     </header>
+    <dialog id='favPopUp'>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+        <div id='faves'></div>
+    </dialog>
     <button id="btn" type="submit">Click here to see a different dog!</button>
+
+    <button id='favBtn' type="submit">Add to Favorites</button>
+
     <figure>
         <img id="dummy-image">
         <figcaption id="dog-quote"></figcaption>
