@@ -1,51 +1,227 @@
+
+/* Reset some default styles to ensure a consistent look */
+
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a modern font and background color */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style the header with a fun background color and center text */
+header {
+    background-color: #ff6b6b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the header's h1 with a playful font and larger size */
+header h1 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 36px;
+}
+
+/* Style buttons with a gradient and rounded corners for a modern look */
+button {
+    background: linear-gradient(45deg, #ff6b6b, #ffb26b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style the main content container with padding */
+main {
+    padding: 20px;
+}
+
+/* Style the figure element with a border and shadow for images */
+figure {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Style the image to fit within the figure container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the caption with some margin and a playful font */
+figcaption {
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/* Style the dropdown button with a unique background color */
 .dropbtn {
-  background-color: #8377D1;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
+/* Style the dropdown content with a white background */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* Style the search input inside the dropdown */
+#myInput {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+/* Style the breed buttons in the dropdown */
+.breed {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
 
-.show {display: block;}
+/* Show the dropdown when the button is clicked */
+.show {
+    display: block;
+}
+
+/* Style the "Add to Favorites" button */
+/* Style the container for the buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space evenly between the buttons */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Style the "Click here to see a different dog" button */
+#btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: #45a049;
+}
+
+/* Style the "Add to Favorites" button */
+#favBtn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#favBtn:hover {
+    background-color: #45a049;
+}
+
+
+
+/*body {*/
+/*    display: grid;*/
+/*    border: 3px solid black;*/
+/*    text-align: center;*/
+/*}*/
+
+/*figure {*/
+    /*text-align: center;*/
+/*    border: 25px solid black;*/
+/*}*/
+
+/*img {*/
+/*    max-height: 500px;*/
+/*    max-width: 500px;*/
+/*}*/
+
+/*main {*/
+    /*display: grid;*/
+    /*text-align: center*/
+/*}*/
+
+/*.dropdown {*/
+    
+/*}*/
+
+/*#viewFaves {*/
+/*    : */
+/*}*/
+
+/*.dropbtn {*/
+/*  background-color: #8377D1;*/
+/*  color: white;*/
+/*  padding: 16px;*/
+/*  font-size: 16px;*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.dropbtn:hover, .dropbtn:focus {*/
+/*  background-color: #3e8e41;*/
+/*}*/
+
+/*#myInput {*/
+/*  box-sizing: border-box;*/
+/*  background-image: url('searchicon.png');*/
+/*  background-position: 14px 12px;*/
+/*  background-repeat: no-repeat;*/
+/*  font-size: 16px;*/
+/*  padding: 14px 20px 12px 45px;*/
+/*  border: none;*/
+/*  border-bottom: 1px solid #ddd;*/
+/*}*/
+
+/*#myInput:focus {outline: 3px solid #ddd;}*/
+
+/*.dropdown {*/
+/*  position: relative;*/
+/*  display: inline-block;*/
+/*}*/
+
+/*.dropdown-content {*/
+/*  display: none;*/
+/*  position: absolute;*/
+/*  background-color: #f6f6f6;*/
+/*  min-width: 230px;*/
+/*  overflow: auto;*/
+/*  border: 1px solid #ddd;*/
+/*  z-index: 1;*/
+/*}*/
+
+/*.dropdown-content a {*/
+/*  color: black;*/
+/*  padding: 12px 16px;*/
+/*  text-decoration: none;*/
+/*  display: block;*/
+/*}*/
+
+/*.dropdown a:hover {background-color: #ddd;}*/
+
+/*.show {display: block;}*/

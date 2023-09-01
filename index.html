@@ -14,28 +14,32 @@
         <h1>Daily Dose of Dogs!</h1>
         <button id='viewFaves' type="submit">View Favorites</button>
     </header>
-    <dialog id='favPopUp'>
-        <p>Greetings, one and all!</p>
-        <form method="dialog">
-            <button>OK</button>
-        </form>
-        <div id='faves'></div>
-    </dialog>
-    <button id="btn" type="submit">Click here to see a different dog!</button>
+    <main>
+        <dialog id='favPopUp'>
+            <h3>Favorite Dogs!</h3>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+            <div id='faves'></div>
+        </dialog>
+        <div class="button-container">
+            <button id="btn" type="submit">Click here to see a different dog!</button>
 
-    <button id='favBtn' type="submit">Add to Favorites</button>
-
-    <figure>
-        <img id="dummy-image">
-        <figcaption id="dog-quote"></figcaption>
-    </figure>
-
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Search All Breeds</button>
-        <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+        <button id='favBtn' type="submit">Add to Favorites</button>
         </div>
-    </div>
+
+        <figure>
+            <img id="dummy-image">
+            <figcaption id="dog-quote"></figcaption>
+        </figure>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Search All Breeds</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
