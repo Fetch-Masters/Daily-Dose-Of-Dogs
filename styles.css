@@ -9,13 +9,13 @@ body, h1, p, ul, li {
 /* Set a modern font and background color */
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #93BEDF;
 }
 
 /* Style the header with a fun background color and center text */
 header {
-    background-color: #ff6b6b;
-    color: #fff;
+    background-color: #8377D1;
+    color: #271F30;
     text-align: center;
     padding: 20px;
 }
@@ -28,8 +28,8 @@ header h1 {
 
 /* Style buttons with a gradient and rounded corners for a modern look */
 button {
-    background: linear-gradient(45deg, #ff6b6b, #ffb26b);
-    color: #fff;
+    background: linear-gradient(45deg, #8377D1, #8EF9F3);
+    color: #271F30;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -48,7 +48,6 @@ figure {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
     text-align: center;
-    background-color: #fff;
 }
 
 /* Style the image to fit within the figure container */
@@ -66,7 +65,6 @@ figcaption {
 /* Style the dropdown button with a unique background color */
 .dropbtn {
     background-color: #4caf50;
-    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -77,7 +75,6 @@ figcaption {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -86,8 +83,11 @@ figcaption {
 #myInput {
     padding: 10px;
     border: none;
-    border-bottom: 1px solid #ccc;
     width: 100%;
+    color: 000;
+    background: linear-gradient(45deg, #8EF9F3, #8377D1);
+
+    
 }
 
 /* Style the breed buttons in the dropdown */
@@ -95,7 +95,6 @@ figcaption {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #fff;
     border: none;
     cursor: pointer;
     text-align: left;
@@ -118,7 +117,6 @@ figcaption {
 /* Style the "Click here to see a different dog" button */
 #btn {
     background-color: #4CAF50;
-    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -132,7 +130,6 @@ figcaption {
 /* Style the "Add to Favorites" button */
 #favBtn {
     background-color: #4CAF50;
-    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -142,86 +139,3 @@ figcaption {
 #favBtn:hover {
     background-color: #45a049;
 }
-
-
-
-/*body {*/
-/*    display: grid;*/
-/*    border: 3px solid black;*/
-/*    text-align: center;*/
-/*}*/
-
-/*figure {*/
-    /*text-align: center;*/
-/*    border: 25px solid black;*/
-/*}*/
-
-/*img {*/
-/*    max-height: 500px;*/
-/*    max-width: 500px;*/
-/*}*/
-
-/*main {*/
-    /*display: grid;*/
-    /*text-align: center*/
-/*}*/
-
-/*.dropdown {*/
-    
-/*}*/
-
-/*#viewFaves {*/
-/*    : */
-/*}*/
-
-/*.dropbtn {*/
-/*  background-color: #8377D1;*/
-/*  color: white;*/
-/*  padding: 16px;*/
-/*  font-size: 16px;*/
-/*  border: none;*/
-/*  cursor: pointer;*/
-/*}*/
-
-/*.dropbtn:hover, .dropbtn:focus {*/
-/*  background-color: #3e8e41;*/
-/*}*/
-
-/*#myInput {*/
-/*  box-sizing: border-box;*/
-/*  background-image: url('searchicon.png');*/
-/*  background-position: 14px 12px;*/
-/*  background-repeat: no-repeat;*/
-/*  font-size: 16px;*/
-/*  padding: 14px 20px 12px 45px;*/
-/*  border: none;*/
-/*  border-bottom: 1px solid #ddd;*/
-/*}*/
-
-/*#myInput:focus {outline: 3px solid #ddd;}*/
-
-/*.dropdown {*/
-/*  position: relative;*/
-/*  display: inline-block;*/
-/*}*/
-
-/*.dropdown-content {*/
-/*  display: none;*/
-/*  position: absolute;*/
-/*  background-color: #f6f6f6;*/
-/*  min-width: 230px;*/
-/*  overflow: auto;*/
-/*  border: 1px solid #ddd;*/
-/*  z-index: 1;*/
-/*}*/
-
-/*.dropdown-content a {*/
-/*  color: black;*/
-/*  padding: 12px 16px;*/
-/*  text-decoration: none;*/
-/*  display: block;*/
-/*}*/
-
-/*.dropdown a:hover {background-color: #ddd;}*/
-
-/*.show {display: block;}*/
