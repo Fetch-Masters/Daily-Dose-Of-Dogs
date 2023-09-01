@@ -1,6 +1,6 @@
-const breedList = 'https://dog.ceo/api/breeds/list/all';
-const randomDogPic = 'https://dog.ceo/api/breeds/image/random';
-const randomFacts = 'https://dog-api.kinduff.com/api/facts';
+const breedListURL = 'https://dog.ceo/api/breeds/list/all';
+const randomDogPicURL = 'https://dog.ceo/api/breeds/image/random';
+const randomFactsURL = 'https://dog-api.kinduff.com/api/facts';
 
 //DOM MANIPULATION FOR DISPLAYING DOG PIC
 let figure;
@@ -74,27 +74,23 @@ function filterFunction() {
   const input = document.getElementById("myInput");
   const filter = input.value.toUpperCase();
   const div = document.getElementById("myDropdown");
-  const a = div.getElementsByTagName("a");
-  for (let i = 0; i < a.length; i++) {
-    let txtValue = a[i].textContent || a[i].innerText;
+  const buttons = document.getElementsByClassName("breed");
+  for (let i = 0; i < buttons.length; i++) {
+    let txtValue = buttons[i].textContent || buttons[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
+      buttons[i].style.display = "";
     }
     else {
-      a[i].style.display = "none";
+      buttons[i].style.display = "none";
     }
   }
 }
 
-listBreeds(breedList)
-generateRandomDogPic(randomDogPic);
-generateRandomDogFacts(randomFacts);
+listBreeds(breedListURL)
+generateRandomDogPic(randomDogPicURL);
+generateRandomDogFacts(randomFactsURL);
 
-//CREATING NEW ITEMS IN LOCAL STORAGE
 const faveImgs = [];
-const saveImg = (idx, imgURL) => {
-  localStorage.setItem(idx, imgURL);
-}
 
 //DOM MANIPULATION FOR DISPLAYING FAVORITES
 const displayFaves = () => {
@@ -134,8 +130,8 @@ document.querySelector('#favBtn').addEventListener('click', (e) => {
 });
 
 document.querySelector('#btn').addEventListener('click', (e) => {
-  generateRandomDogPic(randomDogPic);
-  generateRandomDogFacts(randomFacts)
+  generateRandomDogPic(randomDogPicURL);
+  generateRandomDogFacts(randomFactsURL)
 });
 
 document.querySelector("#myDropdown").addEventListener('click', async (e) => {
