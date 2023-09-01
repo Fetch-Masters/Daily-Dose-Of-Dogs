@@ -145,6 +145,11 @@ figcaption {
 
 #favPopUp {
     text-align: center;
+    background-color: #8377D1;
+    color: #271F30;
+    font-size: larger;
+    border-radius: 15px;
+    border: 3px outset #271F30;
 }
 
 #faves {
