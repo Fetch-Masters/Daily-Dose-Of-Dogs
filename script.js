@@ -96,11 +96,6 @@ const saveImg = (idx, imgURL) => {
   localStorage.setItem(idx, imgURL);
 }
 
-//GET ITEMS FROM LOCAL STORAGE
-// const getImg = (img) => {
-//   localStorage.getItem()
-// }
-
 //DOM MANIPULATION FOR DISPLAYING FAVORITES
 const displayFaves = () => {
   const favesEl = document.querySelector('#faves');
@@ -111,15 +106,10 @@ const displayFaves = () => {
     img.src = imgURL;
     favesEl.append(img);
   })
-  // const oldImg = document.querySelector('img').remove()
-  
+
 }
 //getFaveImgs and saveNewFaveImgs
 const getFaveImgs = () => {
-  // console.log(arr);
-  // arr.forEach((img) => {
-  //   displayFaves(img);
-  // })
   return faveImgs;
 }
 
@@ -133,27 +123,19 @@ const saveNewFaveImgs = (url) => {
 document.querySelector('#viewFaves').addEventListener('click', (e) => {
   displayFaves();
   document.querySelector('#favPopUp').showModal()
-  // console.log(e.target, document.querySelector('img'))
-  // for (let i = 0; i < faveImgs.length; i++) {
-    // console.log(localStorage.getItem(i))
     console.log(faveImgs)
   // }
 });
-// localStorage.clear()
 document.querySelector('#favBtn').addEventListener('click', (e) => {
 //   console.log(e.target)
   const imgURL = document.querySelector('#dummy-image').src;
-  // if (!faveImgs.includes(imgURL)) faveImgs.push(imgURL)
-  // saveImg(faveImgs.indexOf(imgURL).toString(), imgURL)
-  // console.log(localStorage)
   saveNewFaveImgs(imgURL);
   console.log(faveImgs);
 });
 
 document.querySelector('#btn').addEventListener('click', (e) => {
-  // figure.innerHTML = ''
   generateRandomDogPic(randomDogPic);
-  // generateRandomDogFacts(randomFacts)
+  generateRandomDogFacts(randomFacts)
 });
 
 document.querySelector("#myDropdown").addEventListener('click', async (e) => {
