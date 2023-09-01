@@ -8,7 +8,7 @@ body, h1, p, ul, li {
 
 /* Set a modern font and background color */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Indie FLower';
     background-color: #93BEDF;
 }
 
@@ -22,7 +22,6 @@ header {
 
 /* Style the header's h1 with a playful font and larger size */
 header h1 {
-    font-family: 'Comic Sans MS', cursive;
     font-size: 36px;
 }
 
@@ -35,6 +34,8 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
+    font-family: 'Indie FLower';
+    font-size: large;
 }
 
 /* Style the main content container with padding */
@@ -59,7 +60,6 @@ img {
 /* Style the caption with some margin and a playful font */
 figcaption {
     margin-top: 10px;
-    font-family: 'Comic Sans MS', cursive;
 }
 
 /* Style the dropdown button with a unique background color */
@@ -86,8 +86,9 @@ figcaption {
     width: 100%;
     color: 000;
     background: linear-gradient(45deg, #8EF9F3, #8377D1);
-
-    
+    font-weight: bold;
+    font-family: 'Indie FLower';
+    font-size: large;
 }
 
 /* Style the breed buttons in the dropdown */
