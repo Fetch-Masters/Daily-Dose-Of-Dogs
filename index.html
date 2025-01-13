@@ -2,45 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Dose of Dogs</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Indie+Flower" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Dose of Dogs</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Indie+Flower" />
 </head>
 
 <body>
-    <header>
-        <h1>Daily Dose of Dogs!</h1>
-        <button id='viewFaves' type="submit">View Favorites</button>
-    </header>
-    <main>
-        <dialog id='favPopUp'>
-            <h3>Favorite Dogs!</h3>
-            <form method="dialog">
-                <button>Close</button>
-            </form>
-            <div id='faves'></div>
-        </dialog>
-        <div class="button-container">
-            <button id="btn" type="submit">Click here to see a different dog!</button>
+  <header>
+    <h1>Daily Dose of Dogs!</h1>
+    <button id='viewFaves' type="submit">View Favorites</button>
+  </header>
+  <main>
+    <dialog id='favPopUp'>
+      <h3>Favorite Dogs!</h3>
+      <form method="dialog">
+        <button>Close</button>
+      </form>
+      <div id='faves'></div>
+    </dialog>
+    <div class="button-container">
+      <button id="btn" type="submit">Click here to see a different dog!</button>
 
-            <button id='favBtn' type="submit">Add to Favorites</button>
-        </div>
+      <button id='favBtn' type="submit">Add to Favorites</button>
+    </div>
 
-        <figure>
-            <img id="dummy-image">
-            <figcaption id="dog-quote"></figcaption>
-        </figure>
+    <figure>
+      <img id="dummy-image">
+      <figcaption id="dog-quote"></figcaption>
+    </figure>
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Search All Breeds</button>
-            <div id="myDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search Breeds..." id="myInput" onkeyup="filterFunction()">
-            </div>
-        </div>
-    </main>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Search All Breeds</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search Breeds..." id="myInput" onkeyup="filterFunction()">
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>

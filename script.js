@@ -5,9 +5,9 @@ const randomFactsURL = 'https://dog-api.kinduff.com/api/facts';
 //DOM MANIPULATION FOR DISPLAYING DOG PIC
 let figure;
 const createDogPics = (imgURL) => {
-    figure = document.querySelector('figure');
-    const img = document.querySelector('#dummy-image');
-    img.src = imgURL;
+  figure = document.querySelector('figure');
+  const img = document.querySelector('#dummy-image');
+  img.src = imgURL;
 }
 
 //DOM MANIPULATION FOR DROP DOWN ADDING EACH BREED
@@ -25,7 +25,7 @@ let figCap;
 const createDogFacts = (facts) => {
   figCap = document.querySelector('figcaption');
   figCap.textContent = facts
- }
+}
 
 //FETCHING THE RANDOM DOG PICS FROM API
 const generateRandomDogPic = async (url) => {
@@ -119,11 +119,11 @@ const saveNewFaveImgs = (url) => {
 document.querySelector('#viewFaves').addEventListener('click', (e) => {
   displayFaves();
   document.querySelector('#favPopUp').showModal()
-    console.log(faveImgs)
+  console.log(faveImgs)
   // }
 });
 document.querySelector('#favBtn').addEventListener('click', (e) => {
-//   console.log(e.target)
+  //   console.log(e.target)
   const imgURL = document.querySelector('#dummy-image').src;
   saveNewFaveImgs(imgURL);
   console.log(faveImgs);

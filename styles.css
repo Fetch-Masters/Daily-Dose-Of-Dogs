@@ -1,159 +1,146 @@
-
-/* Reset some default styles to ensure a consistent look */
-
-body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
-/* Set a modern font and background color */
 body {
-    font-family: 'Indie FLower';
-    background-color: #93BEDF;
+  font-family: 'Indie FLower';
+  background-color: #93BEDF;
 }
 
-/* Style the header with a fun background color and center text */
 header {
-    background-color: #8377D1;
-    color: #271F30;
-    text-align: center;
-    padding: 20px;
+  background-color: #8377D1;
+  color: #271F30;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Style the header's h1 with a playful font and larger size */
 header h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
-/* Style buttons with a gradient and rounded corners for a modern look */
 button {
-    background: linear-gradient(45deg, #8377D1, #8EF9F3);
-    color: #271F30;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Indie FLower';
-    font-size: large;
+  background: linear-gradient(45deg, #8377D1, #8EF9F3);
+  color: #271F30;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Indie FLower';
+  font-size: large;
 }
 
-/* Style the main content container with padding */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
-/* Style the figure element with a border and shadow for images */
 figure {
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
 }
 
-/* Style the image to fit within the figure container */
 img {
-    max-width: 600px;
-    max-height: 600px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
-/* Style the caption with some margin and a playful font */
 figcaption {
-    margin-top: 10px;
-    font-size: x-large; 
-    font-weight: bold;
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-/* Style the dropdown button with a unique background color */
 .dropbtn {
-    background-color: #4caf50;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Style the dropdown content with a white background */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-/* Style the search input inside the dropdown */
 #myInput {
-    padding: 10px;
-    border: none;
-    width: 100%;
-    color: 000;
-    background: linear-gradient(45deg, #8EF9F3, #8377D1);
-    font-weight: bold;
-    font-family: 'Indie FLower';
-    font-size: large;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  color: 000;
+  background: linear-gradient(45deg, #8EF9F3, #8377D1);
+  font-weight: bold;
+  font-family: 'Indie FLower';
+  font-size: large;
 }
 
-/* Style the breed buttons in the dropdown */
 .breed {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    text-align: left;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
 
-/* Show the dropdown when the button is clicked */
 .show {
-    display: block;
+  display: block;
 }
 
-/* Style the "Add to Favorites" button */
-/* Style the container for the buttons */
 .button-container {
-    display: flex;
-    justify-content: space-between; /* Space evenly between the buttons */
-    align-items: center; /* Center vertically */
-    margin-top: 20px; /* Adjust the margin as needed */
+  display: flex;
+  justify-content: space-between;
+  /* Space evenly between the buttons */
+  align-items: center;
+  /* Center vertically */
+  margin-top: 20px;
+  /* Adjust the margin as needed */
 }
 
-/* Style the "Click here to see a different dog" button */
 #btn {
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-/* Style the "Add to Favorites" button */
 #favBtn {
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #favBtn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 #favPopUp {
-    text-align: center;
-    background-color: #8377D1;
-    color: #271F30;
-    font-size: larger;
-    border-radius: 15px;
-    border: 3px outset #271F30;
+  text-align: center;
+  background-color: #8377D1;
+  color: #271F30;
+  font-size: larger;
+  border-radius: 15px;
+  border: 3px outset #271F30;
 }
 
 #faves {
-    display: flex;
-    max-height: 400px;
-    max-width: auto;
+  display: flex;
+  max-height: 400px;
+  max-width: auto;
 }

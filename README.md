@@ -8,4 +8,3 @@ Inspired by our love for dogs, this fun site shows the user random dog pictures!
 Watch the demo recorded by Scrum Master and Lead Developer Erica Ponce!
 
 https://github.com/user-attachments/assets/8a83d28f-3b77-472c-9a72-99858925a9e3
-
